@@ -1191,6 +1191,8 @@
       <change afterPath="$PROJECT_DIR$/../../V2 Unicorn/mailJet/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../V2 Unicorn/mailJet/src/main/java/mailJet.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../welcomeEmail/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_end/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../back_end/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1198,7 +1200,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1pnm1KaUE2ntGRT3yitqWLgurS5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -1231,7 +1233,7 @@
       <updated>1615827015039</updated>
       <workItem from="1615827016812" duration="56000" />
       <workItem from="1615969362674" duration="65000" />
-      <workItem from="1615969600004" duration="4575000" />
+      <workItem from="1615969600004" duration="4690000" />
     </task>
     <servers />
   </component>

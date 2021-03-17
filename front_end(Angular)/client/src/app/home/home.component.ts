@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
               text     : 'empty',
           }, onSuccess: (event: any, fields: any) => {
                 console.log(fields.text)
-              let url = 'http://localhost:8081/graphql';
+                let url = 'http://localhost:8081/graphql';
               let path = fields.text
               this.path = fields.text;
 
