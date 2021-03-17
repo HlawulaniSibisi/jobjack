@@ -1,0 +1,22 @@
+{
+  "name": "back_end_old",
+  "version": "1.0.0",
+  "description": "try",
+  "main": "server.js",
+  "scripts": {
+    "test": "yest",
+    "start": "node server.js"
+  },
+  "author": "hlawulani",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "filesize": "^6.1.0",
+    "graphql": "^15.5.0",
+    "cors": "^2.8.5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}

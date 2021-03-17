@@ -1,0 +1,100 @@
+
+<div class="ui container">
+    <div class="ui segment basic">
+        <img class="ui image medium centered" src="../../assets/images/logo-half-green.png">
+        <form class="ui form" id="searchForm">
+            <div class="field">
+                <label>Insert directory from root (i.e from C:/)</label>
+                <div class="ui fluid action input">
+                    <input type="text" name="text" placeholder="Search...">
+                    <button class="ui button teal submit" type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="ui header small red">Click on table row to see more data</div>
+        <table class="ui celled table selectable single line fixed teal">
+            <thead>
+                <tr>
+                    <th>File Name</th>
+                    <th>Size</th>
+                    <th>Created Date</th>
+                    <th>Permission</th>
+                    <th>Is Directory</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let d of directoryList">
+
+                    <td (click)="openDataModal(d)">{{d?.fileName}}</td>
+                    <td (click)="openDataModal(d)">{{d?.fileSize}}</td>
+                    <td (click)="openDataModal(d)">{{d?.createdDate}}</td>
+                    <td (click)="openDataModal(d)">{{d?.permission}}</td>
+                    <td (click)="openDataModal(d)">
+                        <i class="icon check green" *ngIf="d?.isDirectory"></i>
+                        <i class="icon x red" *ngIf="!d?.isDirectory"></i>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="ui modal small" id="moreDataModal">
+    <i class="close icon"></i>
+    <div class="header">File Data</div>
+    <div class="content">
+        <div class="ui list celled large">
+            <a class="item">
+                <i class="right triangle icon"></i>
+                <div class="content">
+                    <div class="header">File Name & Extension</div>
+                    <div class="description">{{currentFileData?.fileName}}</div>
+                </div>
+            </a>
+            <a class="item">
+                <i class="right triangle icon"></i>
+                <div class="content">
+                    <div class="header">File Size</div>
+                    <div class="description">{{currentFileData?.fileSize}}.</div>
+                </div>
+            </a>
+
+            <a class="item">
+                <i class="right triangle icon"></i>
+                <div class="content">
+                    <div class="header">Date Created</div>
+                    <div class="description">{{currentFileData?.createdDate}}.</div>
+                </div>
+            </a>
+
+            <a class="item">
+                <i class="right triangle icon"></i>
+                <div class="content">
+                    <div class="header">Permission</div>
+                    <div class="description">{{currentFileData?.permission}}.</div>
+                </div>
+            </a>
+
+            <a class="item">
+                <i class="right triangle icon"></i>
+                <div class="content">
+                    <div class="header">Full Path</div>
+                    <div class="description">{{path}}/{{currentFileData?.fileName}}</div>
+                </div>
+            </a>
+
+            <a class="item">
+                <i class="right triangle icon"></i>
+                <div class="content">
+                    <div class="header">Directory or File</div>
+                    <div class="description" *ngIf="currentFileData?.isDirectory">Directory</div>
+                    <div class="description" *ngIf="currentFileData?.isDirectory">File</div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</div>
